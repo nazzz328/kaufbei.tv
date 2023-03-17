@@ -1,0 +1,20 @@
+@import "../abstracts/variables";
+
+.phone-number {
+  display: flex;
+  gap: 0.5rem;
+  padding-right: 0.5rem;
+  flex-shrink: 0;
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: $green-color;
+  }
+
+  &__digits {
+    margin-top: 2px;
+    font-size: 2.2rem;
+    font-family: "Cera Pro Bold", Arial, sans-serif;
+  }
+}

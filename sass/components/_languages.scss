@@ -1,0 +1,21 @@
+@import "../abstracts/extends";
+
+.languages {
+  @extend .btn-reset;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0.6rem 1.7rem !important;
+  border-radius: 6px;
+
+  &__flag {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__arrow-down {
+    width: 1.2rem;
+    height: 1.2rem;
+    transform: rotate(90deg);
+  }
+}

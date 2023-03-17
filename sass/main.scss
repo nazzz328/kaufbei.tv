@@ -1,3 +1,21 @@
+//////////  LAYOUT
+
 @import "./layout/header";
+
+//////////  BASE
+
 @import "./base/base";
 @import "./base/typography";
+
+//////////  ABSTRACTS
+
+@import "./abstracts/variables";
+@import "./abstracts/extends";
+
+//////////  COMPONENTS
+
+@import "./components/search";
+@import "./components/phone-number";
+@import "./components/languages";
+@import "./components/login";
+@import "./components/cart";

@@ -1,0 +1,20 @@
+@import "../abstracts/variables";
+@import "../abstracts/extends";
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  @extend .btn-reset;
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.8rem;
+    fill: $green-color;
+  }
+
+  &__text {
+    letter-spacing: 0.1px;
+    font-family: "Cera Pro Light", Arial, sans-serif;
+  }
+}

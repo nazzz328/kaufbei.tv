@@ -1,0 +1,30 @@
+@import "../abstracts/extends";
+
+.cart {
+  display: flex;
+  padding: 0 1.5rem;
+  gap: 1rem;
+  align-items: center;
+  @extend .btn-reset;
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: #ffffff;
+    &-container {
+      position: relative;
+      background-color: #f62e5e;
+      border-radius: 50%;
+      width: 4.6rem;
+      height: 4.6rem;
+    }
+  }
+  &__text {
+    font-size: 2rem;
+    font-family: "Cera Pro Light", Arial, sans-serif;
+  }
+}

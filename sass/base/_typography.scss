@@ -1,0 +1,23 @@
+@import "../abstracts/variables";
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Cera Pro", Arial, sans-serif;
+  color: $dark-color;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("/assets/fonts/Cera\ Pro\ Regular.otf");
+}
+
+@font-face {
+  font-family: "Cera Pro Bold";
+  src: url("/assets/fonts/Cera\ Pro\ Medium.ttf");
+}
+
+@font-face {
+  font-family: "Cera Pro Light";
+  src: url("/assets/fonts/Cera\ Pro\ Light.ttf");
+}
