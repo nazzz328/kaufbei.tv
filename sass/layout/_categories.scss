@@ -1,6 +1,6 @@
 @import "../abstracts/variables";
 
-.navigation {
+.categories {
   background-color: $green-color;
   height: 4rem;
   width: 100%;
@@ -71,6 +71,10 @@
       color: #ffffff;
       font-size: 1.8rem;
       font-family: inherit;
+    }
+
+    &:hover {
+      color: #e7fdc3;
     }
   }
 }

@@ -24,15 +24,15 @@
   height: 100%;
 }
 
-.navigation {
+.categories {
   background-color: #87b144;
   height: 4rem;
   width: 100%;
 }
-.navigation__button {
+.categories__button {
   margin-top: 0.1rem;
 }
-.navigation__icon {
+.categories__icon {
   position: relative;
   top: 50%;
   left: 50%;
@@ -40,45 +40,72 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.navigation__icon, .navigation__icon::after, .navigation__icon::before {
+.categories__icon, .categories__icon::after, .categories__icon::before {
   width: 1.7rem;
   height: 2.3px;
   background-color: #ffffff;
   display: inline-block;
 }
-.navigation__icon::after, .navigation__icon::before {
+.categories__icon::after, .categories__icon::before {
   content: "";
   position: absolute;
   left: 0;
 }
-.navigation__icon::before {
+.categories__icon::before {
   top: -0.6rem;
 }
-.navigation__icon::after {
+.categories__icon::after {
   top: 0.6rem;
 }
-.navigation__content {
+.categories__content {
   width: 83%;
   margin: 0 auto;
   position: relative;
   transform: translateY(-50%);
   top: 50%;
 }
-.navigation__list {
+.categories__list {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.navigation__item--main {
+.categories__item--main {
   display: flex;
   gap: 0.5rem;
 }
-.navigation__link:link, .navigation__link:active, .navigation__link:visited {
+.categories__link:link, .categories__link:active, .categories__link:visited {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.8rem;
   font-family: inherit;
+}
+.categories__link:hover {
+  color: #e7fdc3;
+}
+
+.breadcrumb {
+  width: 83%;
+  margin: 0 auto;
+  height: 2.3rem;
+  margin-top: 0.3rem;
+  color: #b0bbd0;
+}
+.breadcrumb__level:not(:first-child)::before {
+  content: attr(data-symbol);
+  padding: 0 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.breadcrumb__link {
+  font-size: 1.2rem;
+}
+.breadcrumb__link:link, .breadcrumb__link:active, .breadcrumb__link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.breadcrumb__link:hover {
+  text-decoration: underline;
 }
 
 * {
