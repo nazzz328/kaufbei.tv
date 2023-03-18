@@ -7,6 +7,11 @@ body {
   color: $dark-color;
 }
 
+h1 {
+  font-size: 3.1rem;
+  font-family: "Cera Pro Bold", Arial, sans-serif;
+}
+
 @font-face {
   font-family: "Cera Pro";
   src: url("/assets/fonts/Cera\ Pro\ Regular.otf");

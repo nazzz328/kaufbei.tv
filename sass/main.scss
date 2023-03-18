@@ -3,6 +3,9 @@
 @import "./layout/header";
 @import "./layout/categories";
 @import "./layout/breadcrumb";
+@import "./layout/general";
+@import "./layout/gallery";
+@import "./layout/main-actions";
 
 //////////  BASE
 
@@ -21,3 +24,4 @@
 @import "./components/languages";
 @import "./components/login";
 @import "./components/cart";
+@import "./components/slider";
