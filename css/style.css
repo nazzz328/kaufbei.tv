@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   display: flex;
+  flex-direction: column;
   border-top: 0.5rem solid #87b144;
 }
 .header__general {
@@ -16,8 +17,68 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100%;
+}
+.header__link {
   flex: 0 0 20rem;
   height: 100%;
+}
+
+.navigation {
+  background-color: #87b144;
+  height: 4rem;
+  width: 100%;
+}
+.navigation__button {
+  margin-top: 0.1rem;
+}
+.navigation__icon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.navigation__icon, .navigation__icon::after, .navigation__icon::before {
+  width: 1.7rem;
+  height: 2.3px;
+  background-color: #ffffff;
+  display: inline-block;
+}
+.navigation__icon::after, .navigation__icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.navigation__icon::before {
+  top: -0.6rem;
+}
+.navigation__icon::after {
+  top: 0.6rem;
+}
+.navigation__content {
+  width: 83%;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.navigation__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation__item--main {
+  display: flex;
+  gap: 0.5rem;
+}
+.navigation__link:link, .navigation__link:active, .navigation__link:visited {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-family: inherit;
 }
 
 * {
@@ -60,7 +121,7 @@ body {
   font-family: "Cera Pro Light";
   src: url("/assets/fonts/Cera Pro Light.ttf");
 }
-.btn-reset, .cart, .login, .languages, .search__cancel-button, .search__button {
+.btn-reset, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -73,7 +134,7 @@ body {
   outline: none;
 }
 
-.btn-reset, .cart, .login, .languages, .search__cancel-button, .search__button {
+.btn-reset, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -127,6 +188,19 @@ body {
   font-size: 1.6rem;
 }
 
+.btn-reset, .cart, .login, .languages, .phone-number, .search__button, .search__cancel-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
 .phone-number {
   display: flex;
   gap: 0.5rem;
@@ -144,7 +218,7 @@ body {
   font-family: "Cera Pro Bold", Arial, sans-serif;
 }
 
-.btn-reset, .cart, .login, .languages, .search__button, .search__cancel-button {
+.btn-reset, .cart, .login, .languages, .search__button, .search__cancel-button, .phone-number {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -174,7 +248,7 @@ body {
   transform: rotate(90deg);
 }
 
-.btn-reset, .cart, .login, .search__button, .search__cancel-button, .languages {
+.btn-reset, .cart, .login, .search__button, .search__cancel-button, .phone-number, .languages {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -199,10 +273,10 @@ body {
 }
 .login__text {
   letter-spacing: 0.1px;
-  font-family: "Cera Pro Light", Arial, sans-serif;
+  font-family: "Cera Pro", Arial, sans-serif;
 }
 
-.btn-reset, .cart, .search__button, .search__cancel-button, .languages, .login {
+.btn-reset, .cart, .search__button, .search__cancel-button, .phone-number, .languages, .login {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -239,7 +313,7 @@ body {
 }
 .cart__text {
   font-size: 2rem;
-  font-family: "Cera Pro Light", Arial, sans-serif;
+  font-family: "Cera Pro", Arial, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

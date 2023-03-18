@@ -12,7 +12,9 @@
   <body>
     <header class="header">
       <div class="header__general">
-        <div class="header__logo"></div>
+        <a href="#" class="header__link">
+          <div class="header__logo"></div>
+        </a>
         <div class="search">
           <div class="search__input-area">
             <input type="text" placeholder="Suche" class="search__input" />
@@ -28,12 +30,12 @@
             </svg>
           </button>
         </div>
-        <div class="phone-number">
+        <button class="phone-number">
           <svg class="phone-number__icon">
             <use xlink:href="/assets/icons/sprite.svg#icon-phone"></use>
           </svg>
           <span class="phone-number__digits">05731-2451590</span>
-        </div>
+        </button>
         <button class="languages">
           <img
             src="/assets/icons/icon-germany.svg"
@@ -59,7 +61,39 @@
           <span class="cart__text">Warenkorb</span>
         </button>
       </div>
-      <nav class="header__navigation"></nav>
+      <nav class="navigation">
+        <div class="navigation__content">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--main">
+              <div class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+              </div>
+              <a href="#" class="navigation__link">Alle Kategorien</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">TV Werbung</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Neuheiten</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Wasserfilter</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Schmuck</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Grillen</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Gartengerät</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Angebote</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
   </body>
 </html>
