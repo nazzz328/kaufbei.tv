@@ -112,12 +112,13 @@
   display: flex;
   gap: 2rem;
   width: 83%;
-  margin: 0 auto;
+  margin: 0.3rem auto 0;
 }
 
 .gallery {
   height: 100%;
-  flex: 1 0 65%;
+  flex: 1 1 60%;
+  max-width: 60%;
   display: flex;
   flex-direction: column;
 }
@@ -144,7 +145,11 @@
 }
 
 .main-actions {
-  flex: 1 0 35%;
+  flex: 1 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 13rem;
 }
 
 * {
@@ -160,6 +165,10 @@ html {
 
 body {
   box-sizing: border-box;
+}
+
+::selection {
+  background-color: #ff9c26;
 }
 
 svg {
@@ -192,7 +201,11 @@ h1 {
   font-family: "Cera Pro Light";
   src: url("/assets/fonts/Cera Pro Light.ttf");
 }
-.btn-reset, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto.ttf");
+}
+.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -205,7 +218,7 @@ h1 {
   outline: none;
 }
 
-.btn-reset, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
+.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -221,7 +234,7 @@ h1 {
 .search {
   display: flex;
   border: 1px solid rgb(225, 225, 225);
-  flex: 0 1 37%;
+  flex: 0 1 38%;
   border-radius: 1px;
   align-items: center;
   height: 50%;
@@ -259,7 +272,7 @@ h1 {
   font-size: 1.6rem;
 }
 
-.btn-reset, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__button, .search__cancel-button {
+.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__button, .search__cancel-button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -289,7 +302,7 @@ h1 {
   font-family: "Cera Pro Bold", Arial, sans-serif;
 }
 
-.btn-reset, .slider__button, .slider__preview-button, .cart, .login, .languages, .search__button, .search__cancel-button, .phone-number {
+.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .search__button, .search__cancel-button, .phone-number {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -305,7 +318,7 @@ h1 {
 .languages {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
   padding: 0.6rem 1.7rem !important;
   border-radius: 6px;
 }
@@ -319,7 +332,7 @@ h1 {
   transform: rotate(90deg);
 }
 
-.btn-reset, .slider__button, .slider__preview-button, .cart, .login, .search__button, .search__cancel-button, .phone-number, .languages {
+.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .search__button, .search__cancel-button, .phone-number, .languages {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -347,7 +360,7 @@ h1 {
   font-family: "Cera Pro", Arial, sans-serif;
 }
 
-.btn-reset, .slider__button, .slider__preview-button, .cart, .search__button, .search__cancel-button, .phone-number, .languages, .login {
+.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .search__button, .search__cancel-button, .phone-number, .languages, .login {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -362,7 +375,7 @@ h1 {
 
 .cart {
   display: flex;
-  padding: 0 1.5rem;
+  padding-left: 2rem !important;
   gap: 1rem;
   align-items: center;
 }
@@ -388,7 +401,7 @@ h1 {
   color: #707070;
 }
 
-.btn-reset, .slider__button, .slider__preview-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart {
+.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -424,8 +437,8 @@ h1 {
   border: 1px solid black;
 }
 .slider__button {
-  width: 4rem;
-  height: 4rem;
+  min-width: 4rem;
+  min-height: 4rem;
   background-color: transparent;
 }
 .slider__button--left {
@@ -438,6 +451,205 @@ h1 {
   fill: #9e9e9e;
   width: 100%;
   height: 100%;
+}
+
+.btn-reset, .pill-button, .cta__rating-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.cta {
+  background-color: #f8fcff;
+  border: solid 1px #dce8f4;
+  justify-self: flex-end;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.cta__ratings {
+  margin-top: 1.5rem;
+  display: flex;
+  height: 3rem;
+  padding-bottom: 4rem;
+}
+.cta__rating-icon {
+  width: 2.4rem;
+  height: 2.2rem;
+}
+.cta__rating-icon--yellow {
+  fill: #ffc94f;
+}
+.cta__rating-icon--grey {
+  fill: #eeeeee;
+}
+.cta__rating-reviews--link:active, .cta__rating-reviews--link:visited, .cta__rating-reviews--link:link {
+  font-size: 1.4rem;
+  margin-top: 2px;
+  padding: 0 0 0 0.5rem;
+  color: #b4b4b4;
+}
+.cta__rating-reviews--link:active:hover, .cta__rating-reviews--link:visited:hover, .cta__rating-reviews--link:link:hover {
+  color: #87b144;
+  text-decoration: none;
+}
+.cta__amount {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.cta__amount-label {
+  padding-right: 1rem;
+}
+.cta__amount-dropdown {
+  flex-grow: 1;
+  height: 4rem;
+  padding: 0.6rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Cera Pro Bold", Arial, sans-serif;
+}
+.cta__amount-dropdown--option {
+  font-size: 1.8rem;
+}
+.cta__duration {
+  color: #87b144;
+  padding-bottom: 1.5rem;
+}
+.cta__amazon-button {
+  margin: 0.7rem 0 1rem;
+  background-color: #f9d875 !important;
+}
+.cta__amazon-icon {
+  transform: translateY(30%);
+  width: 9rem;
+}
+.cta__paypal-info {
+  font-size: 1.2rem;
+  display: inline-block;
+  padding-bottom: 0.8rem;
+}
+.cta__paypal-info:link, .cta__paypal-info:visited {
+  text-decoration: none;
+  color: #595b5b;
+}
+.cta__paypal-info:active {
+  text-decoration: underline;
+}
+.cta__paypal-text {
+  white-space: nowrap;
+}
+.cta__paypal-text--link {
+  color: #0070ba;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+.cta__paypal-icon {
+  background-image: url("../../assets/icons/paypal.svg");
+  display: inline-block;
+  margin-bottom: -0.95rem;
+  width: 4.5rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cta__article-number {
+  font-size: 1.4rem;
+  font-family: "Roboto", Arial, sans-serif;
+  margin-bottom: 2rem;
+}
+.cta__delivery-costs {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #787979;
+}
+.cta__delivery-costs--link {
+  text-decoration: underline;
+}
+.cta__delivery-costs--link:link, .cta__delivery-costs--link:active, .cta__delivery-costs--link:visited {
+  color: inherit;
+}
+.cta__delivery-costs--link:hover {
+  color: #87b144;
+}
+
+.aux-actions {
+  background-color: #f9fbf6;
+  border: 1px solid #e5f3cd;
+  height: 9.7rem;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+.price__old-price {
+  color: #bbbbbb;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+.price__old-price-wrapper {
+  display: flex;
+}
+.price__old-price--price {
+  text-decoration: line-through;
+  padding-right: 1rem;
+}
+.price__discount--pill {
+  font-family: "Cera Pro Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: #f62f5e;
+  padding: 0.3rem 1rem;
+  border-radius: 1.1rem;
+  color: #ffffff;
+}
+.price__actual-price-wrapper {
+  gap: 3px;
+  align-items: flex-start;
+  display: flex;
+  transform: skewX(-6deg);
+  margin: 3px 0 0 3px;
+}
+.price__actual-price--lg {
+  font-family: "Cera Pro Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1;
+}
+.price__actual-price--sm {
+  text-decoration: underline;
+  font-family: "Cera Pro Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.pill-button {
+  background-color: #f62f5e;
+  border-radius: 10rem;
+  padding: 1.3rem 1.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.pill-button__icon {
+  width: 2.1rem;
+  height: 2.1rem;
+  fill: #ffffff;
+}
+.pill-button__label {
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

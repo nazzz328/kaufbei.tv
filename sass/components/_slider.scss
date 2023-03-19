@@ -31,8 +31,8 @@
 
   &__button {
     @extend .btn-reset;
-    width: 4rem;
-    height: 4rem;
+    min-width: 4rem;
+    min-height: 4rem;
     background-color: transparent;
 
     &--left {

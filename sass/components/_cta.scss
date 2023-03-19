@@ -1,0 +1,145 @@
+@import "../abstracts/extends";
+@import "../abstracts/variables";
+
+.cta {
+  background-color: #f8fcff;
+  border: solid 1px #dce8f4;
+  justify-self: flex-end;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  &__ratings {
+    margin-top: 1.5rem;
+    display: flex;
+    height: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  &__rating {
+    &-button {
+      @extend .btn-reset;
+    }
+
+    &-icon {
+      width: 2.4rem;
+      height: 2.2rem;
+
+      &--yellow {
+        fill: #ffc94f;
+      }
+
+      &--grey {
+        fill: #eeeeee;
+      }
+    }
+  }
+  &__rating-reviews--link:active,
+  &__rating-reviews--link:visited,
+  &__rating-reviews--link:link {
+    font-size: 1.4rem;
+    margin-top: 2px;
+    padding: 0 0 0 0.5rem;
+    color: #b4b4b4;
+
+    &:hover {
+      color: $green-color;
+      text-decoration: none;
+    }
+  }
+  &__amount {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &-label {
+      padding-right: 1rem;
+    }
+
+    &-dropdown {
+      flex-grow: 1;
+      height: 4rem;
+      padding: 0.6rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      font-family: "Cera Pro Bold", Arial, sans-serif;
+
+      &--option {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  &__duration {
+    color: $green-color;
+    padding-bottom: 1.5rem;
+  }
+
+  &__amazon-button {
+    margin: 0.7rem 0 1rem;
+    background-color: #f9d875 !important;
+  }
+
+  &__amazon-icon {
+    transform: translateY(30%);
+    width: 9rem;
+  }
+
+  &__paypal-info {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding-bottom: 0.8rem;
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: #595b5b;
+    }
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  &__paypal-text {
+    white-space: nowrap;
+    &--link {
+      color: #0070ba;
+      text-decoration: underline;
+      white-space: nowrap;
+    }
+  }
+
+  &__paypal-icon {
+    background-image: url("../../assets/icons/paypal.svg");
+    display: inline-block;
+    margin-bottom: -0.95rem;
+    width: 4.5rem;
+    height: 2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__article-number {
+    font-size: 1.4rem;
+    font-family: "Roboto", Arial, sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  &__delivery-costs {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #787979;
+
+    &--link {
+      text-decoration: underline;
+      &:link,
+      &:active,
+      &:visited {
+        color: inherit;
+      }
+
+      &:hover {
+        color: $green-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "../abstracts/variables";
+
+.price {
+  display: flex;
+  flex-direction: column;
+
+  &__old-price {
+    color: #bbbbbb;
+    font-size: 1.4rem;
+    display: inline-block;
+
+    &-wrapper {
+      display: flex;
+    }
+
+    &--price {
+      text-decoration: line-through;
+      padding-right: 1rem;
+    }
+  }
+
+  &__discount--pill {
+    font-family: "Cera Pro Bold", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: $red-color;
+    padding: 0.3rem 1rem;
+    border-radius: 1.1rem;
+    color: #ffffff;
+  }
+
+  &__actual-price {
+    &-wrapper {
+      gap: 3px;
+      align-items: flex-start;
+      display: flex;
+      transform: skewX(-6deg);
+      margin: 3px 0 0 3px;
+    }
+    &--lg {
+      font-family: "Cera Pro Bold", Arial, sans-serif;
+      font-weight: 700;
+      font-size: 5rem;
+      line-height: 1;
+    }
+
+    &--sm {
+      text-decoration: underline;
+      font-family: "Cera Pro Bold", Arial, sans-serif;
+      font-weight: 700;
+      font-size: 2.4rem;
+    }
+  }
+}
