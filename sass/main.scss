@@ -6,6 +6,8 @@
 @import "./layout/general";
 @import "./layout/gallery";
 @import "./layout/main-actions";
+@import "./layout/details";
+@import "./layout/recommended";
 
 //////////  BASE
 
@@ -31,3 +33,4 @@
 @import "./components/suggestions";
 @import "./components/price";
 @import "./components/pill-button";
+@import "./components/description";

@@ -1,0 +1,54 @@
+@import "../abstracts/variables";
+@import "../abstracts/extends";
+
+.description {
+  padding: 3rem;
+  border: 1px solid rgb(230, 230, 230);
+
+  &__heading {
+    text-align: left;
+
+    &--1 {
+      font-family: "Cera Pro Bold", Arial, sans-serif;
+      font-size: 2.2rem;
+      color: #003a70;
+    }
+
+    &--2 {
+      font-weight: 600;
+      font-size: 3rem;
+    }
+
+    &--3 {
+      font-size: 2.4rem;
+    }
+
+    &--4 {
+      font-size: inherit;
+      text-decoration: underline;
+    }
+  }
+
+  &__text {
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.42;
+  }
+
+  &__video {
+    padding: 1.5rem 1.5rem 2rem;
+    background-color: #f8fcff;
+    border-top: 2px solid #e0ebf5;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+  }
+
+  &__list {
+    font-family: "Cera Pro", Arial, sans-serif;
+    padding-left: 3rem;
+
+    &-item:not(:last-child) {
+      margin-bottom: 0.3rem;
+    }
+  }
+}

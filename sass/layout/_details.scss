@@ -1,0 +1,34 @@
+@import "../abstracts/variables";
+@import "../abstracts/extends";
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: $content-width;
+  margin: 0 auto;
+
+  &__categories {
+    &-list {
+      display: flex;
+      list-style: none;
+    }
+
+    &-button {
+      @extend .btn-reset;
+      padding: 1.5rem 2rem !important;
+      font-size: 2rem !important;
+      font-weight: 400 !important;
+      color: rgb(75, 75, 75) !important;
+
+      &:hover {
+        background-color: #eeeeee !important;
+        color: $green-color !important;
+      }
+
+      &--selected {
+        background-color: $green-color !important;
+        color: #ffffff !important;
+      }
+    }
+  }
+}

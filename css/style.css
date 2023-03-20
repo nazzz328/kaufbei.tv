@@ -153,6 +153,49 @@
   margin-right: 2.5rem;
 }
 
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button, .details__categories-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 83%;
+  margin: 0 auto;
+}
+.details__categories-list {
+  display: flex;
+  list-style: none;
+}
+.details__categories-button {
+  padding: 1.5rem 2rem !important;
+  font-size: 2rem !important;
+  font-weight: 400 !important;
+  color: rgb(75, 75, 75) !important;
+}
+.details__categories-button:hover {
+  background-color: #eeeeee !important;
+  color: #87b144 !important;
+}
+.details__categories-button--selected {
+  background-color: #87b144 !important;
+  color: #ffffff !important;
+}
+
+.recommended {
+  width: 83%;
+  margin: 0 auto;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -206,7 +249,7 @@ h1 {
   font-family: "Roboto";
   src: url("/assets/fonts/Roboto.ttf");
 }
-.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button, .details__categories-button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -231,7 +274,47 @@ h1 {
   margin-bottom: 2rem !important;
 }
 
-.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
+.mt-sm {
+  margin-top: 0.5rem !important;
+}
+
+.mt-md {
+  margin-top: 1rem !important;
+}
+
+.mt-lg {
+  margin-top: 2rem !important;
+}
+
+.pt-sm {
+  padding-top: 0.5rem;
+}
+
+.pt-md {
+  padding-top: 1rem;
+}
+
+.pt-lg {
+  padding-top: 2rem;
+}
+
+.pb-sm {
+  padding-bottom: 0.5rem;
+}
+
+.pb-md {
+  padding-bottom: 1rem;
+}
+
+.pb-lg {
+  padding-bottom: 2rem;
+}
+
+.bb-sm {
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button, .details__categories-button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -285,7 +368,7 @@ h1 {
   font-size: 1.6rem;
 }
 
-.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__button, .search__cancel-button {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .details__categories-button, .search__button, .search__cancel-button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -315,7 +398,7 @@ h1 {
   font-family: "Cera Pro Bold", Arial, sans-serif;
 }
 
-.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .search__button, .search__cancel-button, .phone-number {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .details__categories-button, .search__button, .search__cancel-button, .phone-number {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -345,7 +428,7 @@ h1 {
   transform: rotate(90deg);
 }
 
-.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .search__button, .search__cancel-button, .phone-number, .languages {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .details__categories-button, .search__button, .search__cancel-button, .phone-number, .languages {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -373,7 +456,7 @@ h1 {
   font-family: "Cera Pro", Arial, sans-serif;
 }
 
-.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .search__button, .search__cancel-button, .phone-number, .languages, .login {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .details__categories-button, .search__button, .search__cancel-button, .phone-number, .languages, .login {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -414,7 +497,7 @@ h1 {
   color: #707070;
 }
 
-.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .details__categories-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -467,7 +550,7 @@ h1 {
   height: 100%;
 }
 
-.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .details__categories-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -577,7 +660,7 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button, .cta__rating-button {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .details__categories-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button, .cta__rating-button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -613,7 +696,7 @@ h1 {
   width: 2.1rem;
 }
 
-.btn-reset, .pill-button, .suggestions__button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button, .cta__rating-button, .aux-actions__button {
+.btn-reset, .pill-button, .suggestions__button, .details__categories-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button, .cta__rating-button, .aux-actions__button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -649,12 +732,21 @@ h1 {
   height: 2.7rem;
   fill: #9e9e9e;
 }
+.suggestions__items--suggestions {
+  display: flex;
+}
 .suggestions__item {
   width: 100%;
   display: flex;
   border: solid 1px #dce8f4;
   padding: 1.5rem;
   position: relative;
+}
+.suggestions__item--suggestions {
+  flex-direction: column;
+}
+.suggestions__item--similar {
+  flex-direction: column;
 }
 .suggestions__item-percent-block {
   position: absolute;
@@ -815,6 +907,62 @@ h1 {
   font-weight: 400;
   color: #ffffff;
   letter-spacing: 1px;
+}
+
+.btn-reset, .details__categories-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button, .cta__rating-button, .aux-actions__button, .suggestions__button, .pill-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.description {
+  padding: 3rem;
+  border: 1px solid rgb(230, 230, 230);
+}
+.description__heading {
+  text-align: left;
+}
+.description__heading--1 {
+  font-family: "Cera Pro Bold", Arial, sans-serif;
+  font-size: 2.2rem;
+  color: #003a70;
+}
+.description__heading--2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.description__heading--3 {
+  font-size: 2.4rem;
+}
+.description__heading--4 {
+  font-size: inherit;
+  text-decoration: underline;
+}
+.description__text {
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.42;
+}
+.description__video {
+  padding: 1.5rem 1.5rem 2rem;
+  background-color: #f8fcff;
+  border-top: 2px solid #e0ebf5;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+.description__list {
+  font-family: "Cera Pro", Arial, sans-serif;
+  padding-left: 3rem;
+}
+.description__list-item:not(:last-child) {
+  margin-bottom: 0.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
