@@ -1,0 +1,92 @@
+@import "../abstracts/variables";
+@import "../abstracts/extends";
+
+.suggestions {
+  margin-top: 2.3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-family: "Cera Pro Bold", Arial, sans-serif;
+    color: $dark-color;
+  }
+  &__buttons {
+    margin-left: auto;
+  }
+
+  &__button {
+    @extend .btn-reset;
+  }
+
+  &__arrow {
+    width: 2.7rem;
+    height: 2.7rem;
+    fill: #9e9e9e;
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    border: solid 1px #dce8f4;
+    padding: 1.5rem;
+    position: relative;
+
+    &-percent-block {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $red-color;
+      width: 2.6rem;
+      height: 2.6rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-percent-label {
+      color: #ffffff;
+      font-size: 1.5rem;
+    }
+
+    &-photo {
+      width: 100%;
+    }
+
+    &-photo-wrapper {
+      flex: 1 0 35%;
+      display: flex;
+      align-items: center;
+    }
+
+    &-info {
+      flex: 1 0 60%;
+      margin-left: 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-header {
+      font-size: 1.6rem;
+      font-family: "Cera Pro Bold", Arial, sans-serif;
+      &:link,
+      &:visited,
+      &:active {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 700;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

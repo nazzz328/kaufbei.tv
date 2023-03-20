@@ -228,19 +228,26 @@
                 <span class="price__old-price price__old-price--uvp"
                   >UVP&nbsp;</span
                 >
-                <span class="price__old-price price__old-price--price"
+                <span class="price__old-price price__old-price--line-through"
                   >299.00 €</span
                 >
-                <span class="price__discount--pill">Sie sparen 10%</span>
+                <span class="price__discount price__discount--pill"
+                  >Sie sparen 10%</span
+                >
               </div>
-              <div class="price__actual-price-wrapper">
-                <span class="price__actual-price price__actual-price--lg"
+              <div
+                class="price__actual-price-wrapper price__actual-price-wrapper--skewed price__actual-price-wrapper--lg"
+              >
+                <span
+                  class="price__actual-price-normal price__actual-price-normal--lg"
                   >269</span
                 >
-                <span class="price__actual-price price__actual-price--sm"
+                <span
+                  class="price__actual-price-superscript price__actual-price-superscript--lg"
                   >99</span
                 >
-                <span class="price__actual-price price__actual-price--lg"
+                <span
+                  class="price__actual-price-normal price__actual-price-normal--lg"
                   >&nbsp;€</span
                 >
               </div>
@@ -304,16 +311,104 @@
                 >Mehr erfahren</span
               >
             </a>
-            <span class="cta__article-number">Artikelnummer: 335</span>
-            <span class="cta__delivery-costs"
+            <span class="price__article-number price__article-number--lg"
+              >Artikelnummer: 335</span
+            >
+            <span class="price__delivery-costs"
               >inkl. MwSt.,
-              <a href="#" class="cta__delivery-costs--link"
+              <a
+                href="#"
+                class="price__delivery-costs-link price__delivery-costs-link--hover"
                 >zzgl. Versandkosten</a
               ></span
             >
           </div>
-          <div class="aux-actions"></div>
-          <div class="suggestions"></div>
+          <div class="aux-actions">
+            <button class="aux-actions__button">
+              <svg class="aux-actions__icon">
+                <use xlink:href="/assets/icons/sprite.svg#icon-heart"></use>
+              </svg>
+              <span class="aux-actions__label">Auf den Wunschzettel</span>
+            </button>
+            <button class="aux-actions__button">
+              <svg class="aux-actions__icon">
+                <use xlink:href="/assets/icons/sprite.svg#icon-share"></use>
+              </svg>
+              <span class="aux-actions__label">Teilen</span>
+            </button>
+          </div>
+          <div class="suggestions">
+            <div class="suggestions__header">
+              <h3 class="suggestions__heading">Ähnliche Produkte</h3>
+              <div class="suggestions__buttons">
+                <button class="suggestions__button suggestions__button--left">
+                  <svg class="suggestions__arrow">
+                    <use
+                      xlink:href="/assets/icons/sprite.svg#icon-arrow-left"
+                    ></use>
+                  </svg>
+                </button>
+                <button class="suggestions__button suggestions__button--right">
+                  <svg class="suggestions__arrow">
+                    <use
+                      xlink:href="/assets/icons/sprite.svg#icon-arrow-right"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="suggestions__items">
+              <div class="suggestions__item">
+                <div class="suggestions__item-percent-block">
+                  <span class="suggestions__item-percent-label">%</span>
+                </div>
+                <div class="suggestions__item-photo-wrapper">
+                  <a href="#"
+                    ><img
+                      src="./assets/img/suggested-item-1.jpg"
+                      alt="suggested item"
+                      class="suggestions__item-photo"
+                  /></a>
+                </div>
+                <div class="suggestions__item-info">
+                  <a href="#" class="suggestions__item-header mb-md">
+                    Maximus 5.0 - TV Receiver mit Fernbedienung +...
+                  </a>
+                  <span
+                    class="price__old-price price__old-price--line-through mb-sm"
+                    >408.99 € UVP</span
+                  >
+                  <span
+                    class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                  >
+                    <span
+                      class="price__actual-price-normal price__actual-price-normal--sm"
+                      >269</span
+                    >
+                    <span
+                      class="price__actual-price-superscript price__actual-price-superscript--sm"
+                      >99</span
+                    >
+                    <span class="price__actual-price-light">€</span></span
+                  >
+                  <span class="price__discount price__discount--plain mb-sm"
+                    >Sie sparen 34%</span
+                  >
+                  <span
+                    class="price__article-number price__article-number--sm mb-md"
+                    >Art.: 3355</span
+                  >
+                  <span class="price__delivery-costs mb-sm"
+                    >inkl. MwSt.,
+                    <a href="#" class="price__delivery-costs-link"
+                      >zzgl.<br />
+                      Versandkosten</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

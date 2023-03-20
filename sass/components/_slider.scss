@@ -5,6 +5,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 
   &__previews {
     display: flex;
@@ -31,8 +32,8 @@
 
   &__button {
     @extend .btn-reset;
-    min-width: 4rem;
-    min-height: 4rem;
+    width: 4rem;
+    height: 4rem;
     background-color: transparent;
 
     &--left {

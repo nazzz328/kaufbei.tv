@@ -1,5 +1,29 @@
+@import "../abstracts/extends";
+@import "../abstracts/variables";
+
 .aux-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
   background-color: #f9fbf6;
   border: 1px solid #e5f3cd;
+  width: 100%;
+  margin-top: 2rem;
   height: 9.7rem;
+  padding: 2.5rem 2rem;
+
+  &__button {
+    @extend .btn-reset;
+    color: rgb(88, 87, 87);
+    display: flex;
+    align-items: center;
+
+    gap: 0.6rem;
+  }
+
+  &__icon {
+    fill: $green-color;
+    height: 2.1rem;
+    width: 2.1rem;
+  }
 }

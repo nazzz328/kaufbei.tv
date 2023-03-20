@@ -11,6 +11,7 @@
   height: 6.6rem;
   align-items: center;
   gap: 1rem;
+  justify-content: center;
 }
 .header__logo {
   background-image: url("/assets/icons/logo.svg");
@@ -65,6 +66,7 @@
   top: 50%;
 }
 .categories__list {
+  width: 100%;
   list-style: none;
   display: flex;
   align-items: center;
@@ -117,8 +119,7 @@
 
 .gallery {
   height: 100%;
-  flex: 1 1 60%;
-  max-width: 60%;
+  flex: 1 1 75%;
   display: flex;
   flex-direction: column;
 }
@@ -145,11 +146,11 @@
 }
 
 .main-actions {
-  flex: 1 0 30%;
+  flex: 1 1 25%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 13rem;
+  margin-right: 2.5rem;
 }
 
 * {
@@ -205,7 +206,7 @@ h1 {
   font-family: "Roboto";
   src: url("/assets/fonts/Roboto.ttf");
 }
-.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -218,7 +219,19 @@ h1 {
   outline: none;
 }
 
-.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
+.mb-sm {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-md {
+  margin-bottom: 1rem !important;
+}
+
+.mb-lg {
+  margin-bottom: 2rem !important;
+}
+
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__cancel-button, .search__button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -272,7 +285,7 @@ h1 {
   font-size: 1.6rem;
 }
 
-.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__button, .search__cancel-button {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .phone-number, .search__button, .search__cancel-button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -302,7 +315,7 @@ h1 {
   font-family: "Cera Pro Bold", Arial, sans-serif;
 }
 
-.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .search__button, .search__cancel-button, .phone-number {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .languages, .search__button, .search__cancel-button, .phone-number {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -332,7 +345,7 @@ h1 {
   transform: rotate(90deg);
 }
 
-.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .search__button, .search__cancel-button, .phone-number, .languages {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .login, .search__button, .search__cancel-button, .phone-number, .languages {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -360,7 +373,7 @@ h1 {
   font-family: "Cera Pro", Arial, sans-serif;
 }
 
-.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .search__button, .search__cancel-button, .phone-number, .languages, .login {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .cart, .search__button, .search__cancel-button, .phone-number, .languages, .login {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -401,7 +414,7 @@ h1 {
   color: #707070;
 }
 
-.btn-reset, .pill-button, .cta__rating-button, .slider__button, .slider__preview-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .slider__button, .slider__preview-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -419,6 +432,7 @@ h1 {
   position: relative;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 .slider__previews {
   display: flex;
@@ -437,8 +451,8 @@ h1 {
   border: 1px solid black;
 }
 .slider__button {
-  min-width: 4rem;
-  min-height: 4rem;
+  width: 4rem;
+  height: 4rem;
   background-color: transparent;
 }
 .slider__button--left {
@@ -453,7 +467,7 @@ h1 {
   height: 100%;
 }
 
-.btn-reset, .pill-button, .cta__rating-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button {
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .cta__rating-button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -472,6 +486,7 @@ h1 {
   justify-self: flex-end;
   padding: 2rem;
   display: flex;
+  width: 100%;
   flex-direction: column;
 }
 .cta__ratings {
@@ -525,7 +540,7 @@ h1 {
   padding-bottom: 1.5rem;
 }
 .cta__amazon-button {
-  margin: 0.7rem 0 1rem;
+  margin: 0.7rem 0 1rem !important;
   background-color: #f9d875 !important;
 }
 .cta__amazon-icon {
@@ -561,30 +576,127 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.cta__article-number {
-  font-size: 1.4rem;
-  font-family: "Roboto", Arial, sans-serif;
-  margin-bottom: 2rem;
-}
-.cta__delivery-costs {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #787979;
-}
-.cta__delivery-costs--link {
-  text-decoration: underline;
-}
-.cta__delivery-costs--link:link, .cta__delivery-costs--link:active, .cta__delivery-costs--link:visited {
+
+.btn-reset, .pill-button, .suggestions__button, .aux-actions__button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button, .cta__rating-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
   color: inherit;
-}
-.cta__delivery-costs--link:hover {
-  color: #87b144;
+  text-align: inherit;
+  cursor: pointer;
+  outline: none;
 }
 
 .aux-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
   background-color: #f9fbf6;
   border: 1px solid #e5f3cd;
+  width: 100%;
+  margin-top: 2rem;
   height: 9.7rem;
+  padding: 2.5rem 2rem;
+}
+.aux-actions__button {
+  color: rgb(88, 87, 87);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.aux-actions__icon {
+  fill: #87b144;
+  height: 2.1rem;
+  width: 2.1rem;
+}
+
+.btn-reset, .pill-button, .suggestions__button, .search__button, .search__cancel-button, .phone-number, .languages, .login, .cart, .slider__preview-button, .slider__button, .cta__rating-button, .aux-actions__button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.suggestions {
+  margin-top: 2.3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.suggestions__header {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.suggestions__heading {
+  font-size: 2rem;
+  font-family: "Cera Pro Bold", Arial, sans-serif;
+  color: #2e2e2e;
+}
+.suggestions__buttons {
+  margin-left: auto;
+}
+.suggestions__arrow {
+  width: 2.7rem;
+  height: 2.7rem;
+  fill: #9e9e9e;
+}
+.suggestions__item {
+  width: 100%;
+  display: flex;
+  border: solid 1px #dce8f4;
+  padding: 1.5rem;
+  position: relative;
+}
+.suggestions__item-percent-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f62f5e;
+  width: 2.6rem;
+  height: 2.6rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.suggestions__item-percent-label {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.suggestions__item-photo {
+  width: 100%;
+}
+.suggestions__item-photo-wrapper {
+  flex: 1 0 35%;
+  display: flex;
+  align-items: center;
+}
+.suggestions__item-info {
+  flex: 1 0 60%;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.suggestions__item-header {
+  font-size: 1.6rem;
+  font-family: "Cera Pro Bold", Arial, sans-serif;
+}
+.suggestions__item-header:link, .suggestions__item-header:visited, .suggestions__item-header:active {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+.suggestions__item-header:hover {
+  text-decoration: underline;
 }
 
 .price {
@@ -599,37 +711,90 @@ h1 {
 .price__old-price-wrapper {
   display: flex;
 }
-.price__old-price--price {
+.price__old-price--line-through {
   text-decoration: line-through;
   padding-right: 1rem;
 }
-.price__discount--pill {
+.price__discount {
   font-family: "Cera Pro Bold", Arial, sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
+}
+.price__discount--pill {
   background-color: #f62f5e;
   padding: 0.3rem 1rem;
   border-radius: 1.1rem;
   color: #ffffff;
 }
+.price__discount--plain {
+  color: #f62f5e;
+}
 .price__actual-price-wrapper {
-  gap: 3px;
   align-items: flex-start;
   display: flex;
-  transform: skewX(-6deg);
   margin: 3px 0 0 3px;
 }
-.price__actual-price--lg {
+.price__actual-price-wrapper--skewed {
+  transform: skewX(-6deg);
+}
+.price__actual-price-wrapper--lg {
+  gap: 3px;
+}
+.price__actual-price-wrapper--sm {
+  gap: 6px;
+}
+.price__actual-price-normal {
   font-family: "Cera Pro Bold", Arial, sans-serif;
   font-weight: 700;
-  font-size: 5rem;
   line-height: 1;
 }
-.price__actual-price--sm {
+.price__actual-price-normal--lg {
+  font-size: 5rem;
+}
+.price__actual-price-normal--sm {
+  font-size: 3rem;
+}
+.price__actual-price-superscript {
   text-decoration: underline;
   font-family: "Cera Pro Bold", Arial, sans-serif;
   font-weight: 700;
+}
+.price__actual-price-superscript--lg {
   font-size: 2.4rem;
+}
+.price__actual-price-superscript--sm {
+  font-size: 1.2rem;
+}
+.price__actual-price-light {
+  font-size: 2.4rem;
+  font-family: "Cera Pro Light", Arial, sans-serif;
+}
+.price__article-number {
+  width: fit-content;
+}
+.price__article-number--lg {
+  font-size: 1.4rem;
+  font-family: "Roboto", Arial, sans-serif;
+  margin-bottom: 2rem;
+}
+.price__article-number--sm {
+  font-size: 1.2rem;
+  padding: 0.2rem 0.4rem;
+  background-color: #ebebeb;
+}
+.price__delivery-costs {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #787979;
+}
+.price__delivery-costs-link {
+  text-decoration: underline;
+}
+.price__delivery-costs-link:link, .price__delivery-costs-link:active, .price__delivery-costs-link:visited {
+  color: inherit;
+}
+.price__delivery-costs-link--hover:hover {
+  color: #87b144;
 }
 
 .pill-button {

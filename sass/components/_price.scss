@@ -13,42 +13,110 @@
       display: flex;
     }
 
-    &--price {
+    &--line-through {
       text-decoration: line-through;
       padding-right: 1rem;
     }
   }
 
-  &__discount--pill {
+  &__discount {
     font-family: "Cera Pro Bold", Arial, sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
-    background-color: $red-color;
-    padding: 0.3rem 1rem;
-    border-radius: 1.1rem;
-    color: #ffffff;
+    &--pill {
+      background-color: $red-color;
+      padding: 0.3rem 1rem;
+      border-radius: 1.1rem;
+      color: #ffffff;
+    }
+
+    &--plain {
+      color: $red-color;
+    }
   }
 
   &__actual-price {
     &-wrapper {
-      gap: 3px;
       align-items: flex-start;
       display: flex;
-      transform: skewX(-6deg);
       margin: 3px 0 0 3px;
+
+      &--skewed {
+        transform: skewX(-6deg);
+      }
+
+      &--lg {
+        gap: 3px;
+      }
+
+      &--sm {
+        gap: 6px;
+      }
     }
-    &--lg {
+    &-normal {
       font-family: "Cera Pro Bold", Arial, sans-serif;
       font-weight: 700;
-      font-size: 5rem;
       line-height: 1;
+      &--lg {
+        font-size: 5rem;
+      }
+
+      &--sm {
+        font-size: 3rem;
+      }
     }
 
-    &--sm {
+    &-superscript {
       text-decoration: underline;
       font-family: "Cera Pro Bold", Arial, sans-serif;
       font-weight: 700;
+      &--lg {
+        font-size: 2.4rem;
+      }
+
+      &--sm {
+        font-size: 1.2rem;
+      }
+    }
+
+    &-light {
       font-size: 2.4rem;
+      font-family: "Cera Pro Light", Arial, sans-serif;
+    }
+  }
+  &__article-number {
+    width: fit-content;
+    &--lg {
+      font-size: 1.4rem;
+      font-family: "Roboto", Arial, sans-serif;
+      margin-bottom: 2rem;
+    }
+
+    &--sm {
+      font-size: 1.2rem;
+      padding: 0.2rem 0.4rem;
+      background-color: #ebebeb;
+    }
+  }
+
+  &__delivery-costs {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #787979;
+
+    &-link {
+      text-decoration: underline;
+      &:link,
+      &:active,
+      &:visited {
+        color: inherit;
+      }
+
+      &--hover {
+        &:hover {
+          color: $green-color;
+        }
+      }
     }
   }
 }
