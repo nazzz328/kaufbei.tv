@@ -1,0 +1,138 @@
+@import "../abstracts/variables";
+@import "../abstracts/extends";
+
+.navigation {
+  background-color: #464852;
+  padding-top: 1rem;
+
+  &__container {
+    width: $content-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    flex: 1 1 20%;
+
+    &--lg {
+      flex: 1 1 26%;
+    }
+
+    &-heading {
+      font-size: 1.8rem;
+      color: #efeff1;
+      text-transform: uppercase;
+
+      &--top {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    &-item {
+      color: #a5a5a5;
+      font-size: 1.6rem;
+
+      &--sm {
+        font-size: 1.3rem;
+        font-family: "Roboto", Arial, sans-serif;
+        line-height: 1.4;
+      }
+
+      &--esm {
+        font-size: 1.3rem !important;
+        font-family: "Cera Pro Bold", Arial, sans-serif !important;
+        color: #a6a6a6 !important;
+
+        &-white {
+          color: #ffffff !important;
+        }
+      }
+
+      &-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+
+    &-input {
+      padding: 0.6rem 1rem;
+      background-color: #dedddd;
+      flex-grow: 1;
+      outline: none;
+      border: none;
+      height: 3.4rem;
+
+      &:focus {
+        outline: none;
+      }
+
+      &-container {
+        display: flex;
+        border-radius: 1px;
+        align-items: stretch;
+        margin-bottom: 3rem;
+      }
+
+      &-button {
+        @extend .btn-reset;
+        display: flex !important;
+        align-items: center;
+        background-color: #6b6e7d !important;
+        padding: 0.3rem 0.6rem !important;
+
+        &:hover {
+          background-color: $red-color !important;
+        }
+      }
+    }
+
+    &-link {
+      &--rest {
+        &:hover {
+          text-decoration: none !important;
+        }
+      }
+      &:link,
+      &:active,
+      &:visited {
+        text-decoration: none;
+        color: inherit;
+        font-size: inherit;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &-icon {
+      width: 13rem;
+      height: 4.2rem;
+
+      &--sm {
+        width: 2.3rem;
+        height: 2.3rem;
+        fill: #ffffff;
+      }
+
+      &--esm {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: #ffffff;
+      }
+    }
+  }
+}

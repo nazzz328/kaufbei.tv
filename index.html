@@ -10,7 +10,21 @@
     <link rel="stylesheet" href="./assets/fonts/Cera Pro Medium.ttf" />
   </head>
   <body>
-    <header class="header">
+    <button class="to-start">
+      <a href="#header" class="to-start__link"
+        ><svg class="to-start__icon">
+          <use xlink:href="/assets/icons/sprite.svg#icon-arrow"></use></svg
+      ></a>
+    </button>
+    <button class="privacy-policy">
+      <a href="" class="privacy-policy__link"
+        ><img
+          src="./assets/img/privacy-icon.png"
+          alt="privacy policy"
+          class="privacy-policy__icon"
+      /></a>
+    </button>
+    <header class="header" id="header">
       <div class="header__general">
         <a href="#" class="header__link">
           <div class="header__logo"></div>
@@ -365,7 +379,7 @@
                 <div class="suggestions__item-photo-wrapper">
                   <a href="#"
                     ><img
-                      src="./assets/img/suggested-item-1.jpg"
+                      src="./assets/img/suggested-item-similar-1.jpg"
                       alt="suggested item"
                       class="suggestions__item-photo"
                   /></a>
@@ -516,10 +530,10 @@
           </div>
         </div>
       </section>
-      <section class="recommended mt-lg">
+      <section class="recommended mt-lg mb-lg">
         <div class="suggestions">
           <div class="suggestions__header">
-            <h3 class="suggestions__heading">Ähnliche Produkte</h3>
+            <h3 class="suggestions__heading">Empfohlene Produkte</h3>
             <div class="suggestions__buttons">
               <button class="suggestions__button suggestions__button--left">
                 <svg class="suggestions__arrow">
@@ -537,11 +551,8 @@
               </button>
             </div>
           </div>
-          <div class="suggestions__items suggestions__items--suggestions">
-            <div class="suggestions__item suggestions__item--suggestions">
-              <div class="suggestions__item-percent-block">
-                <span class="suggestions__item-percent-label">%</span>
-              </div>
+          <div class="suggestions__items suggestions__items--multiple">
+            <div class="suggestions__item suggestions__item--multiple">
               <div class="suggestions__item-photo-wrapper">
                 <a href="#"
                   ><img
@@ -552,18 +563,145 @@
               </div>
               <div class="suggestions__item-info">
                 <a href="#" class="suggestions__item-header mb-md">
-                  Maximus 5.0 - TV Receiver mit Fernbedienung +...
+                  VEVAGO Sitzsack für drinnen und draußen in verschiedenen...
                 </a>
                 <span
+                  class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                >
+                  <span
+                    class="price__actual-price-normal price__actual-price-normal--sm"
+                    >75</span
+                  >
+                  <span
+                    class="price__actual-price-superscript price__actual-price-superscript--sm"
+                    >00</span
+                  >
+                  <span class="price__actual-price-light">€</span></span
+                >
+
+                <span
+                  class="price__article-number price__article-number--sm mb-md"
+                  >Art.: 777</span
+                >
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
+                  >inkl. MwSt.,
+                  <a href="#" class="price__delivery-costs-link"
+                    >zzgl.<br />
+                    Versandkosten</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="suggestions__item suggestions__item--multiple">
+              <div class="suggestions__item-photo-wrapper">
+                <a href="#"
+                  ><img
+                    src="./assets/img/suggested-item-2.jpg"
+                    alt="suggested item"
+                    class="suggestions__item-photo"
+                /></a>
+              </div>
+              <div class="suggestions__item-info">
+                <a href="#" class="suggestions__item-header mb-md">
+                  PLATINUM Class 10 Micro-SDHC 16GB Speicherkarte mit S...
+                </a>
+                <span
+                  class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                >
+                  <span
+                    class="price__actual-price-normal price__actual-price-normal--sm"
+                    >15</span
+                  >
+                  <span
+                    class="price__actual-price-superscript price__actual-price-superscript--sm"
+                    >00</span
+                  >
+                  <span class="price__actual-price-light">€</span></span
+                >
+
+                <span
+                  class="price__article-number price__article-number--sm mb-md"
+                  >Art.: 70200101</span
+                >
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
+                  >inkl. MwSt.,
+                  <a href="#" class="price__delivery-costs-link"
+                    >zzgl.<br />
+                    Versandkosten</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="suggestions__item suggestions__item--multiple">
+              <div class="suggestions__item-photo-wrapper">
+                <a href="#"
+                  ><img
+                    src="./assets/img/suggested-item-3.jpg"
+                    alt="suggested item"
+                    class="suggestions__item-photo"
+                /></a>
+              </div>
+              <div class="suggestions__item-info">
+                <a href="#" class="suggestions__item-header mb-md">
+                  Batterie Arcas R03 Micro AAA 1,5V (2St.)
+                </a>
+                <span
+                  class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                >
+                  <span
+                    class="price__actual-price-normal price__actual-price-normal--sm"
+                    >1</span
+                  >
+                  <span
+                    class="price__actual-price-superscript price__actual-price-superscript--sm"
+                    >99</span
+                  >
+                  <span class="price__actual-price-light">€</span></span
+                >
+
+                <span
+                  class="price__article-number price__article-number--sm mb-md"
+                  >Art.: 70200129</span
+                >
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
+                  >inkl. MwSt.,
+                  <a href="#" class="price__delivery-costs-link"
+                    >zzgl.<br />
+                    Versandkosten</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="suggestions__item suggestions__item--multiple">
+              <div class="suggestions__item-percent-block">
+                <span class="suggestions__item-percent-label">%</span>
+              </div>
+              <div class="suggestions__item-photo-wrapper">
+                <a href="#"
+                  ><img
+                    src="./assets/img/suggested-item-4.jpg"
+                    alt="suggested item"
+                    class="suggestions__item-photo"
+                /></a>
+              </div>
+              <div class="suggestions__item-info">
+                <a href="#" class="suggestions__item-header mb-md">
+                  Belyov Pastila 14-teiliges Set in verschiedenen...
+                </a>
+                <span class="price__weight-price">34.77 €/kg</span>
+                <span
                   class="price__old-price price__old-price--line-through mb-sm"
-                  >408.99 € UVP</span
+                  >45.00 € UVP</span
                 >
                 <span
                   class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
                 >
                   <span
                     class="price__actual-price-normal price__actual-price-normal--sm"
-                    >269</span
+                    >39</span
                   >
                   <span
                     class="price__actual-price-superscript price__actual-price-superscript--sm"
@@ -572,13 +710,102 @@
                   <span class="price__actual-price-light">€</span></span
                 >
                 <span class="price__discount price__discount--plain mb-sm"
-                  >Sie sparen 34%</span
+                  >Sie sparen 11%</span
                 >
                 <span
                   class="price__article-number price__article-number--sm mb-md"
-                  >Art.: 3355</span
+                  >Art.: 4045</span
                 >
-                <span class="price__delivery-costs mb-sm"
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
+                  >inkl. MwSt.,
+                  <a href="#" class="price__delivery-costs-link"
+                    >zzgl.<br />
+                    Versandkosten</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="suggestions__item suggestions__item--multiple">
+              <div class="suggestions__item-percent-block">
+                <span class="suggestions__item-percent-label">%</span>
+              </div>
+              <div class="suggestions__item-photo-wrapper">
+                <a href="#"
+                  ><img
+                    src="./assets/img/suggested-item-5.jpg"
+                    alt="suggested item"
+                    class="suggestions__item-photo"
+                /></a>
+              </div>
+              <div class="suggestions__item-info">
+                <a href="#" class="suggestions__item-header mb-md">
+                  Super Alkaline AA Batterien - 4 Stück
+                </a>
+
+                <span
+                  class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                >
+                  <span
+                    class="price__actual-price-normal price__actual-price-normal--sm"
+                    >1</span
+                  >
+                  <span
+                    class="price__actual-price-superscript price__actual-price-superscript--sm"
+                    >71</span
+                  >
+                  <span class="price__actual-price-light">€</span></span
+                >
+                <span class="price__discount price__discount--plain mb-sm"
+                  >Sie sparen 43%</span
+                >
+                <span
+                  class="price__article-number price__article-number--sm mb-md"
+                  >Art.: 70710443</span
+                >
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
+                  >inkl. MwSt.,
+                  <a href="#" class="price__delivery-costs-link"
+                    >zzgl.<br />
+                    Versandkosten</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="suggestions__item suggestions__item--multiple">
+              <div class="suggestions__item-photo-wrapper">
+                <a href="#"
+                  ><img
+                    src="./assets/img/suggested-item-6.jpg"
+                    alt="suggested item"
+                    class="suggestions__item-photo"
+                /></a>
+              </div>
+              <div class="suggestions__item-info">
+                <a href="#" class="suggestions__item-header mb-md">
+                  Kochzeitschrift KulinarTV, Jahres-Abo, 12 Ausgaben
+                </a>
+                <span
+                  class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                >
+                  <span
+                    class="price__actual-price-normal price__actual-price-normal--sm"
+                    >14</span
+                  >
+                  <span
+                    class="price__actual-price-superscript price__actual-price-superscript--sm"
+                    >99</span
+                  >
+                  <span class="price__actual-price-light">€</span></span
+                >
+
+                <span
+                  class="price__article-number price__article-number--sm mb-md"
+                  >Art.: 104</span
+                >
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
                   >inkl. MwSt.,
                   <a href="#" class="price__delivery-costs-link"
                     >zzgl.<br />
@@ -590,6 +817,583 @@
           </div>
         </div>
       </section>
+      <section class="customers-choice pt-md mb-lg">
+        <div class="suggestions">
+          <div class="suggestions__header">
+            <h3 class="suggestions__heading">
+              Kunden, die diesen Artikel gekauft haben, kauften auch
+            </h3>
+            <div class="suggestions__buttons">
+              <button class="suggestions__button suggestions__button--left">
+                <svg class="suggestions__arrow">
+                  <use
+                    xlink:href="/assets/icons/sprite.svg#icon-arrow-left"
+                  ></use>
+                </svg>
+              </button>
+              <button class="suggestions__button suggestions__button--right">
+                <svg class="suggestions__arrow">
+                  <use
+                    xlink:href="/assets/icons/sprite.svg#icon-arrow-right"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="suggestions__items suggestions__items--multiple">
+            <div class="suggestions__item suggestions__item--multiple">
+              <div class="suggestions__item-percent-block">
+                <span class="suggestions__item-percent-label">%</span>
+              </div>
+              <div class="suggestions__item-photo-wrapper">
+                <a href="#"
+                  ><img
+                    src="./assets/img/other-customers-item-1.jpg"
+                    alt="suggested item"
+                    class="suggestions__item-photo"
+                /></a>
+              </div>
+              <div class="suggestions__item-info">
+                <a href="#" class="suggestions__item-header mb-md">
+                  AmberProfi Naturseife mit Bernsteinsäure und Sanddornöl...
+                </a>
+                <span class="price__weight-price">30.90 €/kg</span>
+                <span
+                  class="price__old-price price__old-price--line-through mb-sm"
+                  >6.00 € UVP</span
+                >
+                <span
+                  class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                >
+                  <span
+                    class="price__actual-price-normal price__actual-price-normal--sm"
+                    >3</span
+                  >
+                  <span
+                    class="price__actual-price-superscript price__actual-price-superscript--sm"
+                    >09</span
+                  >
+                  <span class="price__actual-price-light">€</span></span
+                >
+                <span class="price__discount price__discount--plain mb-sm"
+                  >Sie sparen 49%</span
+                >
+                <span
+                  class="price__article-number price__article-number--sm mb-md"
+                  >Art.: 70400117</span
+                >
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
+                  >inkl. MwSt.,
+                  <a href="#" class="price__delivery-costs-link"
+                    >zzgl.<br />
+                    Versandkosten</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="suggestions__item suggestions__item--multiple">
+              <div class="suggestions__item-photo-wrapper">
+                <a href="#"
+                  ><img
+                    src="./assets/img/other-customers-item-2.jpg"
+                    alt="suggested item"
+                    class="suggestions__item-photo"
+                /></a>
+              </div>
+              <div class="suggestions__item-info">
+                <a href="#" class="suggestions__item-header mb-md">
+                  Backnetix Akupressur-Bandage
+                </a>
+                <span
+                  class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                >
+                  <span
+                    class="price__actual-price-normal price__actual-price-normal--sm"
+                    >29</span
+                  >
+                  <span
+                    class="price__actual-price-superscript price__actual-price-superscript--sm"
+                    >99</span
+                  >
+                  <span class="price__actual-price-light">€</span></span
+                >
+
+                <span
+                  class="price__article-number price__article-number--sm mb-md"
+                  >Art.: 0014</span
+                >
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
+                  >inkl. MwSt.,
+                  <a href="#" class="price__delivery-costs-link"
+                    >zzgl.<br />
+                    Versandkosten</a
+                  ></span
+                >
+              </div>
+            </div>
+
+            <div class="suggestions__item suggestions__item--multiple">
+              <div class="suggestions__item-photo-wrapper">
+                <a href="#"
+                  ><img
+                    src="./assets/img/other-customers-item-3.jpg"
+                    alt="suggested item"
+                    class="suggestions__item-photo"
+                /></a>
+              </div>
+              <div class="suggestions__item-info">
+                <a href="#" class="suggestions__item-header mb-md">
+                  Bambusspieße 100 St, 25 cm, Ø 3 mm
+                </a>
+                <span
+                  class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                >
+                  <span
+                    class="price__actual-price-normal price__actual-price-normal--sm"
+                    >3</span
+                  >
+                  <span
+                    class="price__actual-price-superscript price__actual-price-superscript--sm"
+                    >61</span
+                  >
+                  <span class="price__actual-price-light">€</span></span
+                >
+
+                <span
+                  class="price__article-number price__article-number--sm mb-md"
+                  >Art.: 70139143</span
+                >
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
+                  >inkl. MwSt.,
+                  <a href="#" class="price__delivery-costs-link"
+                    >zzgl.<br />
+                    Versandkosten</a
+                  ></span
+                >
+              </div>
+            </div>
+
+            <div class="suggestions__item suggestions__item--multiple">
+              <div class="suggestions__item-photo-wrapper">
+                <a href="#"
+                  ><img
+                    src="./assets/img/other-customers-item-4.jpg"
+                    alt="suggested item"
+                    class="suggestions__item-photo"
+                /></a>
+              </div>
+              <div class="suggestions__item-info">
+                <a href="#" class="suggestions__item-header mb-md">
+                  Teeglashalter "Schnellzug" mit Teeglas, 200 ml
+                </a>
+                <span
+                  class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                >
+                  <span
+                    class="price__actual-price-normal price__actual-price-normal--sm"
+                    >12</span
+                  >
+                  <span
+                    class="price__actual-price-superscript price__actual-price-superscript--sm"
+                    >91</span
+                  >
+                  <span class="price__actual-price-light">€</span></span
+                >
+
+                <span
+                  class="price__article-number price__article-number--sm mb-md"
+                  >Art.: 70137811</span
+                >
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
+                  >inkl. MwSt.,
+                  <a href="#" class="price__delivery-costs-link"
+                    >zzgl.<br />
+                    Versandkosten</a
+                  ></span
+                >
+              </div>
+            </div>
+
+            <div class="suggestions__item suggestions__item--multiple">
+              <div class="suggestions__item-photo-wrapper">
+                <a href="#"
+                  ><img
+                    src="./assets/img/other-customers-item-5.jpg"
+                    alt="suggested item"
+                    class="suggestions__item-photo"
+                /></a>
+              </div>
+              <div class="suggestions__item-info">
+                <a href="#" class="suggestions__item-header mb-md">
+                  Ersatzfernbedienung für MAXIMUS NEU
+                </a>
+                <span
+                  class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                >
+                  <span
+                    class="price__actual-price-normal price__actual-price-normal--sm"
+                    >19</span
+                  >
+                  <span
+                    class="price__actual-price-superscript price__actual-price-superscript--sm"
+                    >99</span
+                  >
+                  <span class="price__actual-price-light">€</span></span
+                >
+
+                <span
+                  class="price__article-number price__article-number--sm mb-md"
+                  >Art.: 10000035</span
+                >
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
+                  >inkl. MwSt.,
+                  <a href="#" class="price__delivery-costs-link"
+                    >zzgl.<br />
+                    Versandkosten</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="suggestions__item suggestions__item--multiple">
+              <div class="suggestions__item-photo-wrapper">
+                <a href="#"
+                  ><img
+                    src="./assets/img/other-customers-item-6.jpg"
+                    alt="suggested item"
+                    class="suggestions__item-photo"
+                /></a>
+              </div>
+              <div class="suggestions__item-info">
+                <a href="#" class="suggestions__item-header mb-md">
+                  Schöpfkelle, Edelstahl mit Holzgriff, 34 cm
+                </a>
+                <span
+                  class="price__actual-price-wrapper price__actual-price-wrapper--sm mb-sm"
+                >
+                  <span
+                    class="price__actual-price-normal price__actual-price-normal--sm"
+                    >7</span
+                  >
+                  <span
+                    class="price__actual-price-superscript price__actual-price-superscript--sm"
+                    >99</span
+                  >
+                  <span class="price__actual-price-light">€</span></span
+                >
+
+                <span
+                  class="price__article-number price__article-number--sm mb-md"
+                  >Art.: 70139506</span
+                >
+                <span
+                  class="price__delivery-costs price__delivery-costs--multiple mb-sm"
+                  >inkl. MwSt.,
+                  <a href="#" class="price__delivery-costs-link"
+                    >zzgl.<br />
+                    Versandkosten</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <nav class="navigation">
+          <div class="navigation__container">
+            <div class="navigation__row">
+              <span class="navigation__row-heading navigation__row-heading--top"
+                >Service</span
+              >
+              <ul class="navigation__row-list">
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Kontakt</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Warenkorb</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Konto</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Merkzettel</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Wie bestellen?</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Newsletter</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">News</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navigation__row">
+              <span class="navigation__row-heading navigation__row-heading--top"
+                >Kaufbei</span
+              >
+              <ul class="navigation__row-list">
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link"
+                    >Händler & Hersteller</a
+                  >
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link"
+                    >Kaufbei TV Livestream</a
+                  >
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Kaufbei Blog</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Jobs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navigation__row">
+              <span class="navigation__row-heading navigation__row-heading--top"
+                >Informationen</span
+              >
+              <ul class="navigation__row-list">
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Impressum</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">AGB</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Datenschutz</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link"
+                    >Zahlung und Versand</a
+                  >
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Widerrufsbelehrung</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">Batterieverordnung</a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link"
+                    >Bestellen aus der Schweiz</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="navigation__row">
+              <span class="navigation__row-heading navigation__row-heading--top"
+                >Bem TV unterwegs schauen!</span
+              >
+              <ul class="navigation__row-list">
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">
+                    <img
+                      src="./assets/icons/google-play.svg"
+                      alt="google play"
+                      class="navigation__row-icon"
+                    />
+                  </a>
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">
+                    <img
+                      src="./assets/icons/app-store.svg"
+                      alt="app store"
+                      class="navigation__row-icon"
+                    />
+                  </a>
+                </li>
+                <li
+                  class="navigation__row-item navigation__row-item-container mb-sm"
+                >
+                  <svg class="navigation__row-icon--sm">
+                    <use
+                      xlink:href="/assets/icons/sprite.svg#icon-whatsapp"
+                    ></use>
+                  </svg>
+                  <a
+                    href=""
+                    class="navigation__row-link navigation__row-link--rest"
+                    ><span
+                      class="navigation__row-heading navigation__row-heading--inline"
+                      >WhatsApp</span
+                    ></a
+                  >
+                </li>
+                <li class="navigation__row-item mb-md">
+                  <a href="" class="navigation__row-link">+49 1579-2360170</a>
+                </li>
+                <li
+                  class="navigation__row-item navigation__row-item-container mb-sm"
+                >
+                  <svg class="navigation__row-icon--sm">
+                    <use
+                      xlink:href="/assets/icons/sprite.svg#icon-telegram"
+                    ></use>
+                  </svg>
+                  <a
+                    href=""
+                    class="navigation__row-link navigation__row-link--rest"
+                    ><span
+                      class="navigation__row-heading navigation__row-heading--inline"
+                      >Telegram</span
+                    ></a
+                  >
+                </li>
+                <li class="navigation__row-item">
+                  <a href="" class="navigation__row-link">t.me/Kaufbei_bot</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navigation__row navigation__row--lg">
+              <span class="navigation__row-heading navigation__row-heading--top"
+                >Newsletter</span
+              >
+              <ul class="navigation__row-list">
+                <li class="navigation__row-item navigation__row-item--sm">
+                  Die neuesten Produkte und die besten Angebote per E-Mail,
+                  damit Ihr nichts mehr verpasst.
+                </li>
+                <li class="navigation__row-item navigation__row-item--sm mb-md">
+                  Sie können den Newsletter jederzeit kostenlos abbestellen.
+                </li>
+                <li class="navigation__row-item">
+                  <div class="navigation__row-input-container">
+                    <input type="text" class="navigation__row-input" />
+                    <button class="navigation__row-input-button">
+                      <svg class="navigation__row-icon--sm">
+                        <use
+                          xlink:href="/assets/icons/sprite.svg#icon-arrow"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="navigation__row-item-container">
+                  <svg class="navigation__row-icon--esm">
+                    <use
+                      xlink:href="/assets/icons/sprite.svg#icon-location"
+                    ></use>
+                  </svg>
+                  <span class="navigation__row-item--esm"
+                    >Oeynhausener Str. 54, 32584 Löhne</span
+                  >
+                </li>
+                <li class="navigation__row-item-container">
+                  <svg class="navigation__row-icon--esm">
+                    <use xlink:href="/assets/icons/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a
+                    href=""
+                    class="navigation__row-link navigation__row-item--esm"
+                    >post@kaufbei.tv</a
+                  >
+                </li>
+                <li class="navigation__row-item-container">
+                  <svg class="navigation__row-icon--esm">
+                    <use
+                      xlink:href="/assets/icons/sprite.svg#icon-mobile"
+                    ></use>
+                  </svg>
+                  <a
+                    href=""
+                    class="navigation__row-link navigation__row-item--esm"
+                    >05731-245 15 90</a
+                  >
+                </li>
+                <li class="navigation__row-item-container">
+                  <svg class="navigation__row-icon--esm">
+                    <use xlink:href="/assets/icons/sprite.svg#icon-clock"></use>
+                  </svg>
+                  <span class="navigation__row-item--esm"
+                    >Telefonisch <br />
+                    Täglich von
+                    <span
+                      class="navigation__row-item--esm navigation__row-item--esm-white"
+                      >8:00</span
+                    >
+                    bis
+                    <span
+                      class="navigation__row-item--esm navigation__row-item--esm-white"
+                      >21:00 </span
+                    >Uhr</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="social-media">
+          <div class="social-media__container">
+            <div class="social-media__slogan">
+              Kaufbei.tv Teleshopping - hochwertige, aktuelle und trendige
+              Produkte
+            </div>
+            <div class="social-media__buttons">
+              <button class="social-media__button">
+                <svg class="social-media__icon">
+                  <use
+                    xlink:href="/assets/icons/sprite.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </button>
+              <button class="social-media__button">
+                <svg class="social-media__icon">
+                  <use
+                    xlink:href="/assets/icons/sprite.svg#icon-odnoklassniki"
+                  ></use>
+                </svg>
+              </button>
+              <button class="social-media__button">
+                <svg class="social-media__icon">
+                  <use
+                    xlink:href="/assets/icons/sprite.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </button>
+              <button class="social-media__button">
+                <svg class="social-media__icon">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-youtube"></use>
+                </svg>
+              </button>
+              <button class="social-media__button">
+                <svg class="social-media__icon">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-twitter"></use>
+                </svg>
+              </button>
+              <button class="social-media__button">
+                <svg class="social-media__icon">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-tiktok"></use>
+                </svg>
+              </button>
+              <button class="social-media__button">
+                <svg class="social-media__icon">
+                  <use
+                    xlink:href="/assets/icons/sprite.svg#icon-telegram"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <div class="social-media__payment-methods">
+              <img
+                src="./assets/img/payment-list.png"
+                alt="payment list"
+                class="social-media__payment-methods-photo"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

@@ -1,0 +1,24 @@
+@import "../abstracts/variables";
+@import "../abstracts/extends";
+
+.to-start {
+  @extend .btn-reset;
+  position: fixed !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  bottom: 8.8rem !important;
+  right: 2.2rem !important;
+  width: 5rem !important;
+  height: 5rem !important;
+  background-color: rgba($green-color, 0.8) !important;
+  padding: 1rem !important;
+  border-radius: 50% !important;
+
+  &__icon {
+    fill: rgba(#ffffff, 0.8);
+    width: 3rem;
+    height: 3rem;
+    transform: rotate(270deg);
+  }
+}

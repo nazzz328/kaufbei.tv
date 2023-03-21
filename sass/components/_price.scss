@@ -19,6 +19,10 @@
     }
   }
 
+  &__weight-price {
+    font-size: 1.2rem;
+  }
+
   &__discount {
     font-family: "Cera Pro Bold", Arial, sans-serif;
     font-weight: 700;
@@ -37,9 +41,8 @@
 
   &__actual-price {
     &-wrapper {
-      align-items: flex-start;
       display: flex;
-      margin: 3px 0 0 3px;
+      margin-top: auto;
 
       &--skewed {
         transform: skewX(-6deg);
@@ -103,6 +106,10 @@
     font-size: 1rem;
     font-weight: 400;
     color: #787979;
+
+    &--multiple {
+      padding-bottom: 2rem;
+    }
 
     &-link {
       text-decoration: underline;

@@ -1,0 +1,23 @@
+@import "../abstracts/variables";
+@import "../abstracts/extends";
+
+.privacy-policy {
+  @extend .btn-reset;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: fixed !important;
+  width: 2.6rem !important;
+  height: 2.6rem !important;
+  bottom: 1rem !important;
+  left: 1rem !important;
+  border-radius: 50% !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) !important;
+
+  &__icon {
+    margin-top: 3px;
+    width: 2rem;
+    height: 2rem;
+  }
+}
